@@ -1,0 +1,17 @@
+:root {
+  --bgcolor: #ffffff;
+  --color-text: #212121;
+  --hover-focus: #2196f3;
+  --color-nav: #212121;
+  --header-footer: #2f303a;
+  --team-bg: rgb(245, 244, 250);
+  --category-search: #757575;
+  --cubik: cubic-bezier(0.4, 0, 0.2, 1);
+  --bg-transparent: #ffffff99;
+}
+
+body {
+  font-family: roboto;
+  color: var(--color-text);
+  background-color: var(--bgcolor);
+}

@@ -1,0 +1,25 @@
+/* Начало оформления лого */
+.head-logo {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-size: 26px;
+  font-family: raleway;
+  text-decoration: none;
+  color: var(--color-text);
+
+  &__part--blue {
+    display: flex;
+    font-size: 26px;
+    font-family: raleway;
+    color: var(--hover-focus);
+  }
+}
+
+.logo-footer {
+  color: var(--bgcolor);
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  padding-top: 0;
+}
+/* Конец оформления лого */

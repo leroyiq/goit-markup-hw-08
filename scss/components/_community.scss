@@ -1,0 +1,20 @@
+.comunity {
+  display: flex;
+}
+.comunity-join {
+  margin-left: 70px;
+}
+.comunity-list {
+  display: flex;
+}
+.soc-list__link.comunity-list__link {
+  background-color: rgba(255, 255, 255, 0.102);
+}
+.soc-list__link.comunity-list__link:hover,
+.soc-list__link.comunity-list__link:focus {
+  background-color: var(--hover-focus);
+  cursor: pointer;
+}
+.comunity-list__icon {
+  fill: var(--bgcolor);
+}

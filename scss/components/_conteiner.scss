@@ -1,0 +1,21 @@
+/* Свойства контейнера */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /* outline: 1px solid red; */
+}
+
+.head-style {
+  text-align: center;
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.16;
+}
+.list > p {
+  font-size: 16px;
+  font-weight: 400;
+}

@@ -1,0 +1,201 @@
+.modal {
+  position: absolute;
+  min-width: 528px;
+  height: 581px;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  opacity: 1;
+  transition: transform 250ms var(--cubik);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -100%) scale(0.3);
+  }
+}
+
+.modal-close {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgcolor);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: fill 250ms var(--cubik);
+  &:hover,
+  &:focus,
+  &:active {
+    fill: var(--hover-focus);
+  }
+}
+
+.form-modal {
+  display: block;
+  width: 448px;
+
+  &__title {
+    display: block;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+  }
+  &__label {
+    display: flex;
+    flex-direction: column;
+    height: 58px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--category-search);
+  }
+
+  &__label.client-coment {
+    height: 138px;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    display: inline-block;
+    padding-left: 42px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubik);
+  }
+
+  &__agree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--category-search);
+  }
+
+  &__input:hover,
+  &__input:focus {
+    border-color: var(--hover-focus);
+
+    &__agree--check {
+      margin-right: 7px;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -40%);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubik);
+
+    .form-modal__input:hover + &,
+    .form-modal__input:focus + & {
+      fill: var(--hover-focus);
+    }
+  }
+}
+
+.icon-holder {
+  position: relative;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.feedback {
+  padding: 12px 16px;
+  height: 120px;
+  resize: none;
+  font-size: 16px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubik);
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--hover-focus);
+  }
+
+  &__contract {
+    display: inline-block;
+    margin-left: 4px;
+    color: var(--hover-focus);
+    text-decoration: underline;
+  }
+}
+
+.icon-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  background-color: transparent;
+  border: 2px solid var(--color-text);
+  border-radius: 2px;
+  fill: var(--bgcolor);
+
+  .form-modal__agree--check:checked + & {
+    background-color: var(--hover-focus);
+    background-origin: border-box;
+    border-color: var(--hover-focus);
+    fill: var(--bgcolor);
+  }
+}
+
+.form-submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--hover-focus);
+  border: 1px solid var(--hover-focus);
+  border-radius: 4px;
+  padding: 15px 59px;
+  color: var(--bgcolor);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubik);
+
+  &:active {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
