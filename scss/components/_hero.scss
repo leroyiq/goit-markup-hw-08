@@ -10,6 +10,11 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero-img.jpg);
+
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero {
   &-title {
@@ -25,8 +30,14 @@
     text-transform: uppercase;
 
     color: var(--bgcolor);
+
     @include mobile {
       width: 360px;
+    }
+    @include desktop {
+      width: 696px;
+      font-size: 44px;
+      line-height: calc(60 / 44);
     }
   }
 }

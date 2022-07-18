@@ -1,31 +1,67 @@
 .differences {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__list {
     display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include table {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: auto;
+      gap: 30px;
+    }
+    @include desktop {
+      flex-wrap: nowrap;
+    }
   }
   &__item {
-    display: inline-flex;
-    width: 270px;
+    display: flex;
+    width: auto;
     height: 120px;
     background-color: var(--team-bg);
     border-radius: 4px;
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
+
+    @include table {
+      width: 354px;
+    }
+    @include desktop {
+      width: 270px;
+    }
   }
   &__title {
     margin-bottom: 10px;
+    text-align: center;
 
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+
+    @include table {
+      text-align: start;
+    }
   }
   &__text {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
+
+    @include table {
+      width: 354px;
+    }
+    @include desktop {
+      width: 270px;
+    }
   }
 }
