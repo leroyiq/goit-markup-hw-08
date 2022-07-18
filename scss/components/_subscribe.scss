@@ -1,15 +1,16 @@
 .subscribe {
-  margin-left: auto;
+  width: 100%;
 }
 
 .subscribe__title {
+  text-align: center;
   color: var(--bgcolor);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 12px;
+  // padding-top: 12px;
   margin-bottom: 20px;
 }
 
@@ -18,9 +19,9 @@
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 4px;
-  width: 358px;
+  width: 100%;
 
-  margin-right: 12px;
+  // margin-right: 12px;
   padding: 15px 16px;
 
   &:hover,
@@ -42,9 +43,12 @@
 }
 
 .subscribe__btn {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
   color: var(--bgcolor);
   background-color: var(--hover-focus);
   border: none;

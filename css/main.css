@@ -136,6 +136,8 @@ img {
 }
 
 .logo-footer {
+  display: block;
+  text-align: center;
   color: var(--bgcolor);
   padding-bottom: 0;
   margin-bottom: 20px;
@@ -673,13 +675,13 @@ img {
   justify-content: center;
   align-items: center;
   list-style: none;
+  gap: 10px;
 }
 
 .soc-list__item {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10px;
 }
 
 .soc-list__link {
@@ -717,11 +719,14 @@ img {
   padding-bottom: 60px;
 }
 
-.address .address__item + .address__item {
-  margin-top: 9px;
+.address__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 8px;
 }
-
-.address__link {
+.address__item .address__link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
@@ -731,8 +736,14 @@ img {
   transition-duration: 250ms;
   transition-timing-function: var(--cubik);
 }
-.address__link:hover, .address__link:focus {
+.address__item .address__link:hover, .address__item .address__link:focus {
   color: var(--hover-focus);
+}
+
+.footer-contact {
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .client {
@@ -797,14 +808,15 @@ img {
 
 .comunity {
   display: flex;
-}
-
-.comunity-join {
-  margin-left: 70px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .comunity-list {
   display: flex;
+  gap: 10px;
+  margin-bottom: 60px;
 }
 
 .soc-list__link.comunity-list__link {
@@ -822,17 +834,17 @@ img {
 }
 
 .subscribe {
-  margin-left: auto;
+  width: 100%;
 }
 
 .subscribe__title {
+  text-align: center;
   color: var(--bgcolor);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 12px;
   margin-bottom: 20px;
 }
 
@@ -841,8 +853,7 @@ img {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 4px;
-  width: 358px;
-  margin-right: 12px;
+  width: 100%;
   padding: 15px 16px;
 }
 .subscribe__input:hover, .subscribe__input:focus {
@@ -861,9 +872,12 @@ img {
 }
 
 .subscribe__btn {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
   color: var(--bgcolor);
   background-color: var(--hover-focus);
   border: none;
