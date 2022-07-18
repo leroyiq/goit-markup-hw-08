@@ -3,6 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include table {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 .comunity-join {
   // margin-left: 70px;

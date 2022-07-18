@@ -812,6 +812,13 @@ img {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 768px), (min-width: 1199px) {
+  .comunity {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 
 .comunity-list {
   display: flex;
@@ -855,6 +862,16 @@ img {
   border-radius: 4px;
   width: 100%;
   padding: 15px 16px;
+}
+@media screen and (min-width: 768px), (min-width: 1199px) {
+  .subscribe__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .subscribe__input:hover, .subscribe__input:focus {
   border-color: var(--hover-focus);
