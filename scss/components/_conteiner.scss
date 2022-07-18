@@ -1,11 +1,23 @@
 /* Свойства контейнера */
 .container {
-  width: 1200px;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* outline: 1px solid red; */
+  // outline: 1px solid red;
+
+  @include mobile {
+    max-width: 480px;
+  }
+
+  @include table {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
 }
 
 .head-style {

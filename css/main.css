@@ -57,12 +57,26 @@ img {
 
 /* Свойства контейнера */
 .container {
-  width: 1200px;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* outline: 1px solid red; */
+}
+@media screen and (min-width: 480px), (min-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px), (min-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .head-style {
@@ -79,19 +93,37 @@ img {
 
 /* Начало оформления лого */
 .head-logo {
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  font-size: 26px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
   font-family: raleway;
   text-decoration: none;
   color: var(--color-text);
 }
 .head-logo__part--blue {
-  display: flex;
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
   font-family: raleway;
   color: var(--hover-focus);
+}
+@media screen and (min-width: 768px), (min-width: 1199px) {
+  .head-logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .head-logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
 }
 
 .logo-footer {
@@ -117,7 +149,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 .head-nav__list {
-  display: flex;
+  display: none;
   margin-left: 93px;
 }
 .head-nav__link {
@@ -185,26 +217,31 @@ img {
 }
 
 .back-color {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #c4c4c4;
-  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
 }
 
 .hero-title {
+  width: 290px;
   text-align: center;
   margin-bottom: 30px;
-  width: 696px;
   margin-right: auto;
   margin-left: auto;
-  font-size: 44px;
+  font-size: 26px;
+  line-height: 1.6153846154;
   font-weight: 900;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  line-height: 1.36;
   color: var(--bgcolor);
+}
+@media screen and (min-width: 480px), (min-width: 767px) {
+  .hero-title {
+    width: 360px;
+  }
 }
 
 .order-service {
@@ -221,7 +258,7 @@ img {
   font-family: roboto;
   cursor: pointer;
   letter-spacing: 0.06em;
-  line-height: 1.87;
+  line-height: 1.875;
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--cubik);
