@@ -8,10 +8,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: baseline;
   }
-}
-.comunity-join {
-  // margin-left: 70px;
+
+  @include desktop {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
 }
 .comunity-list {
   display: flex;

@@ -11,6 +11,11 @@
   flex-direction: column;
   margin-bottom: 8px;
 
+  @include desktop {
+    display: block;
+    margin-bottom: 9px;
+  }
+
   .address__link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
@@ -26,10 +31,23 @@
     &:focus {
       color: var(--hover-focus);
     }
+
+    @include desktop {
+      display: block;
+    }
   }
 }
 .footer-contact {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   margin-bottom: 60px;
+
+  @include desktop {
+    display: block;
+    text-align: start;
+    margin-bottom: 0;
+    padding-right: 70px;
+  }
 }

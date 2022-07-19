@@ -1,5 +1,9 @@
 .subscribe {
   width: 100%;
+  @include desktop {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .subscribe__title {
@@ -12,6 +16,10 @@
   text-transform: uppercase;
   // padding-top: 12px;
   margin-bottom: 20px;
+
+  @include desktop {
+    text-align: start;
+  }
 }
 
 .subscribe__input {
@@ -30,6 +38,14 @@
     width: 450px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @include desktop {
+    display: flex;
+    width: auto;
+    justify-content: start;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   &:hover,
@@ -73,6 +89,12 @@
   transition-property: color, background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: var(--cubik);
+
+  @include desktop {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
 
   &:hover,
   &:focus {

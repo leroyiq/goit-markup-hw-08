@@ -15,6 +15,10 @@
     display: none;
 
     margin-left: 93px;
+
+    @include desktop {
+      display: flex;
+    }
   }
 
   &__link {
