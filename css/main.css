@@ -62,7 +62,6 @@ img {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 480px), (min-width: 767px) {
   .container {
@@ -774,7 +773,7 @@ img {
     display: block;
     text-align: start;
     margin-bottom: 0;
-    padding-right: 70px;
+    margin-right: 70px;
   }
 }
 
@@ -885,7 +884,9 @@ img {
 @media screen and (min-width: 1200px) {
   .subscribe {
     display: flex;
+    flex-direction: column;
     margin-left: auto;
+    width: auto;
   }
 }
 
@@ -902,6 +903,12 @@ img {
 @media screen and (min-width: 1200px) {
   .subscribe__title {
     text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    display: flex;
   }
 }
 
@@ -926,10 +933,10 @@ img {
 @media screen and (min-width: 1200px) {
   .subscribe__input {
     display: flex;
-    width: auto;
+    width: 358px;
     justify-content: start;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 12px;
   }
 }
 .subscribe__input:hover, .subscribe__input:focus {
