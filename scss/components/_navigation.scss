@@ -16,6 +16,10 @@
 
     margin-left: 93px;
 
+    @include table {
+      display: flex;
+    }
+
     @include desktop {
       display: flex;
     }

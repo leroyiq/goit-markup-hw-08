@@ -19,6 +19,15 @@
   margin-bottom: 40px;
   list-style: none;
   width: 100%;
+
+  @include table {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 // .filter__variant + .filter__variant {
 //   margin-left: 8px;
