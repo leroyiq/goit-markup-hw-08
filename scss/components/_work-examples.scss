@@ -1,13 +1,16 @@
 .port {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   border-top: 1px solid #ececec;
+  width: 100%;
 }
 
 .examples {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 30px;
+  width: 100%;
 }
 .list .poster-name {
   font-size: 18px;
@@ -20,15 +23,17 @@
   border-top: none;
 }
 .examples__item {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+  width: inherit;
 
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-  }
+  // &:nth-last-child(-n + 3) {
+  //   margin-bottom: 0;
+  // }
 }
 .examples__link {
   display: block;
   text-decoration: none;
+  width: 100%;
 
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -41,9 +46,15 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
+
+.examples__pic {
+  width: 100%;
+}
+
 .overlay {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .overlay__text {
@@ -51,15 +62,16 @@
   display: flex;
   left: 0;
   bottom: 0;
-  max-width: 370px;
+  // max-width: 370px;
   height: 100%;
   justify-content: center;
   align-items: center;
   padding: 63px 24px;
+  width: 100%;
 
   background-color: rgba(33, 150, 243, 0.898);
   color: var(--bgcolor);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.55;
   letter-spacing: 0.03em;
@@ -74,6 +86,10 @@
   .examples__link:focus & {
     transform: translateY(0);
     opacity: 1;
+  }
+
+  @include mobile {
+    font-size: 18px;
   }
 }
 

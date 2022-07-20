@@ -1002,24 +1002,24 @@ img {
   color: #212121;
   padding: 6px 22px;
   font-size: 16px;
+  line-height: 1.625;
   font-weight: 500;
+  letter-spacing: 0.03em;
   background-color: #f5f4fa;
   border: none;
   border-radius: 4px;
   font-family: roboto;
   cursor: pointer;
-  line-height: 1.625;
 }
 
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 15px 8px;
+  margin-bottom: 40px;
   list-style: none;
-}
-
-.filter__variant + .filter__variant {
-  margin-left: 8px;
+  width: 100%;
 }
 
 .filter__btn {
@@ -1037,15 +1037,18 @@ img {
 }
 
 .port {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   border-top: 1px solid #ececec;
+  width: 100%;
 }
 
 .examples {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 30px;
+  width: 100%;
 }
 
 .list .poster-name {
@@ -1060,15 +1063,13 @@ img {
 }
 
 .examples__item {
-  margin-bottom: 30px;
-}
-.examples__item:nth-last-child(-n+3) {
-  margin-bottom: 0;
+  width: inherit;
 }
 
 .examples__link {
   display: block;
   text-decoration: none;
+  width: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: var(--cubik);
@@ -1078,9 +1079,14 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.examples__pic {
+  width: 100%;
+}
+
 .overlay {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .overlay__text {
@@ -1088,14 +1094,14 @@ img {
   display: flex;
   left: 0;
   bottom: 0;
-  max-width: 370px;
   height: 100%;
   justify-content: center;
   align-items: center;
   padding: 63px 24px;
+  width: 100%;
   background-color: rgba(33, 150, 243, 0.898);
   color: var(--bgcolor);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.55;
   letter-spacing: 0.03em;
@@ -1108,6 +1114,11 @@ img {
 .examples__link:hover .overlay__text, .examples__link:focus .overlay__text {
   transform: translateY(0);
   opacity: 1;
+}
+@media screen and (min-width: 480px), (min-width: 767px) {
+  .overlay__text {
+    font-size: 18px;
+  }
 }
 
 .name-cards {

@@ -2,23 +2,27 @@
   color: #212121;
   padding: 6px 22px;
   font-size: 16px;
+  line-height: calc(26 / 16);
   font-weight: 500;
+  letter-spacing: 0.03em;
   background-color: #f5f4fa;
   border: none;
   border-radius: 4px;
   font-family: roboto;
   cursor: pointer;
-  line-height: 1.625;
 }
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 15px 8px;
+  margin-bottom: 40px;
   list-style: none;
+  width: 100%;
 }
-.filter__variant + .filter__variant {
-  margin-left: 8px;
-}
+// .filter__variant + .filter__variant {
+//   margin-left: 8px;
+// }
 
 .filter__btn {
   transition-property: color, background-color, box-shadow;
