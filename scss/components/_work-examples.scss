@@ -124,3 +124,14 @@
   color: var(--category-search);
   letter-spacing: 0.03em;
 }
+
+.first {
+  height: auto;
+
+  @include table {
+    height: 146px;
+  }
+  @include desktop {
+    height: auto;
+  }
+}

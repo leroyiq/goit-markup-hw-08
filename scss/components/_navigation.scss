@@ -13,15 +13,16 @@
   }
   &__list {
     display: none;
-
-    margin-left: 93px;
+    gap: 50px;
 
     @include table {
       display: flex;
+      margin-left: 88px;
     }
 
     @include desktop {
       display: flex;
+      margin-left: 93px;
     }
   }
 
@@ -65,9 +66,9 @@
   &__after.active::after {
     opacity: 1;
   }
-  &__list &__item + &__item {
-    margin-left: 50px;
-  }
+  // &__list &__item + &__item {
+  //   margin-left: 50px;
+  // }
   &__link:hover,
   &__link:focus {
     color: var(--hover-focus);
@@ -82,6 +83,16 @@
 
 .contact {
   margin-left: auto;
+  display: none;
+
+  @include table {
+    display: block;
+    gap: 30px;
+  }
+
+  @include desktop {
+    display: flex;
+  }
 
   &-icon {
     margin: 0;
@@ -95,5 +106,25 @@
   }
   .head-nav__link:hover &-icon {
     fill: var(--hover-focus);
+  }
+
+  &__link {
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: start;
+
+    @include desktop {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      justify-content: center;
+    }
+  }
+
+  &__item + &__item {
+    margin-top: 10px;
+
+    @include desktop {
+      margin-top: 0;
+    }
   }
 }
