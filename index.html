@@ -246,7 +246,11 @@
             <li class="works__item">
               <a href=""
                 ><img
-                  src="./images/img1.jpg"
+                  srcset="
+                    ./images/img1-desktop.jpg   1x,
+                    ./images/img1-desktop2x.jpg 2x
+                  "
+                  src="./images/img1-desktop.jpg"
                   alt="програмированием логики"
                   width="370"
                   height="294"
@@ -259,7 +263,11 @@
             <li class="works__item">
               <a href=""
                 ><img
-                  src="./images/img2.jpg"
+                  srcset="
+                    ./images/img2-desktop.jpg   1x,
+                    ./images/img2-desktop2x.jpg 2x
+                  "
+                  src="./images/img2-desktop.jpg"
                   alt="моделирование решений"
                   width="370"
                   height="294"
@@ -272,7 +280,11 @@
             <li class="works__item">
               <a href=""
                 ><img
-                  src="./images/img3.jpg"
+                  srcset="
+                    ./images/img3-desktop.jpg   1x,
+                    ./images/img3-desktop2x.jpg 2x
+                  "
+                  src="./images/img3-desktop.jpg"
                   alt="дезайн"
                   width="370"
                   height="294"
@@ -291,7 +303,35 @@
           <h2 class="head-style">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img src="./images/Product-Designer.jpg" alt="Игорь Демьяненко" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Product-Designer-desktop.jpg   1x,
+                    ./images/Product-Designer-desktop2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/Product-Designer-table.jpg   1x,
+                    ./images/Product-Designer-table2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Product-Designer-mobile.jpg   1x,
+                    ./images/Product-Designer-mobile2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./images/Product-Designer-mobile2x.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
+
               <h3 class="team__person">Игорь Демьяненко</h3>
               <p class="head-nav__link--grey team__job">Product Designer</p>
               <ul class="soc-list">
@@ -343,7 +383,35 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/Frontend-Developer.jpg" alt="Ольга Репина" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Frontend-Developer-desktop.jpg   1x,
+                    ./images/Frontend-Developer-desktop2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/Frontend-Developer-table.jpg   1x,
+                    ./images/Frontend-Developer-table2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Frontend-Developer-mobile.jpg   1x,
+                    ./images/Frontend-Developer-mobile2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./images/Frontend-Developer-mobile2x.jpg"
+                  alt="Ольга Репина"
+                />
+              </picture>
+
               <h3 class="team__person">Ольга Репина</h3>
               <p class="head-nav__link--grey team__job">Frontend Developer</p>
               <ul class="soc-list">
@@ -394,7 +462,35 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/Marketing.jpg" alt="Николай Тарасов" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Marketing-desktop.jpg   1x,
+                    ./images/Marketing-desktop2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/Marketing-table.jpg   1x,
+                    ./images/Marketing-table2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Marketing-mobile.jpg   1x,
+                    ./images/Marketing-mobile2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./images/Marketing-mobile.jpg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
+
               <h3 class="team__person">Николай Тарасов</h3>
               <p class="head-nav__link--grey team__job">Marketing</p>
               <ul class="soc-list">
@@ -445,7 +541,35 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/UI-Designer.jpg" alt="Михаил Ермаков" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/UI-Designer-desktop.jpg   1x,
+                    ./images/UI-Designer-desktop2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/UI-Designer-table.jpg   1x,
+                    ./images/UI-Designer-table2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/UI-Designer-mobile.jpg   1x,
+                    ./images/UI-Designer-mobile2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./images/UI-Designer-mobile.jpg"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
+
               <h3 class="team__person">Михаил Ермаков</h3>
               <p class="head-nav__link--grey team__job">UI Designer</p>
               <ul class="soc-list">
