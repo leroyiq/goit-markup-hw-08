@@ -115,7 +115,14 @@
   font-weight: 700;
   line-height: 2;
   color: var(--color-text);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
+
+  @include table {
+    letter-spacing: 0.04em;
+  }
+  @include desktop {
+    letter-spacing: 0.06em;
+  }
 }
 .category {
   font-size: 16px;
@@ -123,15 +130,4 @@
   line-height: 1.87;
   color: var(--category-search);
   letter-spacing: 0.03em;
-}
-
-.first {
-  height: auto;
-
-  @include table {
-    height: 146px;
-  }
-  @include desktop {
-    height: auto;
-  }
 }
