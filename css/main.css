@@ -288,7 +288,6 @@ a {
   height: 100vh;
   width: 100vw;
   background-color: var(--bgcolor);
-  overflow-y: scroll;
 }
 @media screen and (min-width: 768px), (min-width: 1199px) {
   .mobile-menu {
@@ -314,8 +313,50 @@ a {
   height: 100%;
   padding: 48px 40px;
 }
+.mobile-menu__nav {
+  flex-grow: 2;
+}
+.mobile-menu__nav .mobile-menu__link {
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
 .mobile-menu__contact {
-  flex-grow: 1;
+  padding-bottom: 64px;
+}
+.mobile-menu__contact .mobile-menu__link {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: var(--hover-focus);
+}
+.mobile-menu__contact .mobile-menu__link[href="mailto:info@devstudio.com:"] {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+.mobile-menu__soc .mobile-menu__link {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: var(--hover-focus);
+}
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-menu__link {
+  color: var(--color-text);
+}
+.mobile-menu__link.current {
+  display: inline-block;
+  width: 132px;
+  color: var(--hover-focus);
+  text-align: center;
 }
 .mobile-menu__soc {
   display: flex;

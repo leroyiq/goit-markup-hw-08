@@ -5,11 +5,12 @@
   height: 100vh;
   width: 100vw;
   background-color: var(--bgcolor);
-  overflow-y: scroll;
+  // overflow-y: scroll;
 
   @include table {
     display: none;
   }
+
   &__btn {
     position: absolute;
     top: 10px;
@@ -28,11 +29,60 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    // width: 100%;
     padding: 48px 40px;
   }
 
+  &__nav {
+    flex-grow: 2;
+  }
+
+  &__nav &__link {
+    font-weight: 500;
+    font-size: 33px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+  }
+
   &__contact {
-    flex-grow: 1;
+    padding-bottom: 64px;
+  }
+
+  &__contact &__link {
+    font-weight: 500;
+    font-size: 27px;
+    line-height: calc(40 / 34);
+    letter-spacing: 0.02em;
+    color: var(--hover-focus);
+  }
+  &__contact &__link[href="mailto:info@devstudio.com:"] {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+  }
+
+  &__soc &__link {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+    color: var(--hover-focus);
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &__link {
+    color: var(--color-text);
+  }
+
+  &__link.current {
+    display: inline-block;
+    width: 132px;
+    color: var(--hover-focus);
+    text-align: center;
   }
 
   &__soc {
