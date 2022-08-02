@@ -63,10 +63,14 @@
     color: var(--color-text);
   }
 
+  &__soc {
+    display: flex;
+  }
+
   &__soc &__link {
     font-weight: 500;
     font-size: 11px;
-    line-height: calc(22 / 18);
+    line-height: calc(15 / 11);
     letter-spacing: 0.02em;
     color: var(--hover-focus);
   }
@@ -83,9 +87,5 @@
     width: 132px;
     color: var(--hover-focus);
     text-align: center;
-  }
-
-  &__soc {
-    display: flex;
   }
 }

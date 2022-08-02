@@ -339,10 +339,13 @@ a {
   letter-spacing: 0.02em;
   color: var(--color-text);
 }
+.mobile-menu__soc {
+  display: flex;
+}
 .mobile-menu__soc .mobile-menu__link {
   font-weight: 500;
   font-size: 11px;
-  line-height: 1.2222222222;
+  line-height: 1.3636363636;
   letter-spacing: 0.02em;
   color: var(--hover-focus);
 }
@@ -357,9 +360,6 @@ a {
   width: 132px;
   color: var(--hover-focus);
   text-align: center;
-}
-.mobile-menu__soc {
-  display: flex;
 }
 
 .back-color {
