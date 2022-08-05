@@ -81,11 +81,30 @@
   &__link {
     color: var(--color-text);
   }
-
+  // ----- Стиль ссылки текущей вкладки ----------
   &__link.current {
     display: inline-block;
     width: 132px;
     color: var(--hover-focus);
     text-align: center;
+  }
+}
+// --------- Стили ссылок на социальные сети -------
+.soc__item {
+  display: flex;
+
+  & + & {
+    margin-left: 10px;
+  }
+
+  &::after {
+    content: "";
+    margin-left: 10px;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+  &.last::after {
+    display: none;
   }
 }

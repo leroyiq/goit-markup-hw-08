@@ -362,6 +362,23 @@ a {
   text-align: center;
 }
 
+.soc__item {
+  display: flex;
+}
+.soc__item + .soc__item {
+  margin-left: 10px;
+}
+.soc__item::after {
+  content: "";
+  margin-left: 10px;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+.soc__item.last::after {
+  display: none;
+}
+
 .back-color {
   padding-top: 118px;
   padding-bottom: 118px;
