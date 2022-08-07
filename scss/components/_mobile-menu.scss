@@ -122,7 +122,6 @@
   }
   // ----- Стиль ссылки текущей вкладки ----------
   &__link.current {
-    display: inline-block;
     width: 132px;
     color: var(--hover-focus);
     // text-align: center;
