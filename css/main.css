@@ -370,6 +370,7 @@ a {
 }
 .mobile-menu__soc {
   display: flex;
+  padding-bottom: 48px;
 }
 .mobile-menu__soc .mobile-menu__link {
   font-weight: 500;
