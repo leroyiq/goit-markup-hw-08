@@ -288,6 +288,7 @@ a {
   height: 100vh;
   width: 100vw;
   background-color: var(--bgcolor);
+  z-index: 99;
   transform: translate(100%);
   transition: transform 250ms var(--cubik);
 }
@@ -312,6 +313,11 @@ a {
   height: 40px;
   background: transparent;
 }
+@media screen and (min-width: 768px), (min-width: 1199px) {
+  .mobile-menu__btn {
+    display: none;
+  }
+}
 .mobile-menu__btn:hover .mobile-menu__icon, .mobile-menu__btn:focus .mobile-menu__icon {
   fill: var(--hover-focus);
 }
@@ -330,6 +336,11 @@ a {
   line-height: 1.175;
   letter-spacing: 0.02em;
 }
+@media screen and (min-width: 480px), (min-width: 767px) {
+  .mobile-menu__nav .mobile-menu__link {
+    font-size: 40px;
+  }
+}
 .mobile-menu__contact {
   padding-bottom: 64px;
 }
@@ -340,12 +351,22 @@ a {
   letter-spacing: 0.02em;
   color: var(--hover-focus);
 }
+@media screen and (min-width: 480px), (min-width: 767px) {
+  .mobile-menu__contact .mobile-menu__link {
+    font-size: 34px;
+  }
+}
 .mobile-menu__contact .mobile-menu__link[href="mailto:info@devstudio.com:"] {
   font-weight: 500;
   font-size: 17px;
   line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: var(--color-text);
+}
+@media screen and (min-width: 480px), (min-width: 767px) {
+  .mobile-menu__contact .mobile-menu__link[href="mailto:info@devstudio.com:"] {
+    font-size: 24px;
+  }
 }
 .mobile-menu__soc {
   display: flex;
@@ -356,6 +377,12 @@ a {
   line-height: 1.3636363636;
   letter-spacing: 0.02em;
   color: var(--hover-focus);
+}
+@media screen and (min-width: 480px), (min-width: 767px) {
+  .mobile-menu__soc .mobile-menu__link {
+    font-size: 18px;
+    line-height: 1.2222222222;
+  }
 }
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;
@@ -370,7 +397,6 @@ a {
   display: inline-block;
   width: 132px;
   color: var(--hover-focus);
-  text-align: center;
 }
 .mobile-menu__btn:hover .mobile-menu__icon {
   fill: var(--hover-focus);
