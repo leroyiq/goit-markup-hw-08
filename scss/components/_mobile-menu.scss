@@ -6,9 +6,15 @@
   width: 100vw;
   background-color: var(--bgcolor);
   // overflow-y: scroll;
+  transform: translate(100%);
+  transition: transform 250ms var(--cubik);
 
   @include table {
     display: none;
+  }
+
+  &.is-open {
+    transform: translate(0);
   }
 
   &__btn {
@@ -23,6 +29,11 @@
     width: 40px;
     height: 40px;
     background: transparent;
+  }
+
+  &__btn:hover &__icon,
+  &__btn:focus &__icon {
+    fill: var(--hover-focus);
   }
 
   &__body {
@@ -81,12 +92,22 @@
   &__link {
     color: var(--color-text);
   }
+
+  &__item:hover &__link,
+  &__item:focus &__link,
+  &__link:hover,
+  &__link:focus {
+    color: var(--hover-focus);
+  }
   // ----- Стиль ссылки текущей вкладки ----------
   &__link.current {
     display: inline-block;
     width: 132px;
     color: var(--hover-focus);
     text-align: center;
+  }
+  &__btn:hover &__icon {
+    fill: var(--hover-focus);
   }
 }
 // --------- Стили ссылок на социальные сети -------
