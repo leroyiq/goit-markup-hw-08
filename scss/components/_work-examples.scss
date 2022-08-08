@@ -94,7 +94,7 @@
   transform: translateY(100%);
   opacity: 1;
   transition-property: transform, opacity;
-  transition-duration: 500ms;
+  transition-duration: 250ms;
   transition-timing-function: var(--cubik);
 
   .examples__link:hover &,
