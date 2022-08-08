@@ -159,6 +159,15 @@
       fill: var(--hover-focus);
     }
   }
+
+  &__contract {
+    display: inline-block;
+    margin-left: 4px;
+    color: var(--hover-focus);
+    text-decoration: underline;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.03em;
+  }
 }
 
 .icon-holder {
@@ -184,13 +193,6 @@
   &:hover,
   &:focus {
     border-color: var(--hover-focus);
-  }
-
-  &__contract {
-    display: inline-block;
-    margin-left: 4px;
-    color: var(--hover-focus);
-    text-decoration: underline;
   }
 }
 

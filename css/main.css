@@ -320,6 +320,7 @@ a {
 }
 .mobile-menu__btn:hover .mobile-menu__icon, .mobile-menu__btn:focus .mobile-menu__icon {
   fill: var(--hover-focus);
+  cursor: pointer;
 }
 .mobile-menu__body {
   display: flex;
@@ -678,6 +679,14 @@ a {
 .form-modal__input:hover + .form-modal__icon, .form-modal__input:focus + .form-modal__icon {
   fill: var(--hover-focus);
 }
+.form-modal__contract {
+  display: inline-block;
+  margin-left: 4px;
+  color: var(--hover-focus);
+  text-decoration: underline;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+}
 
 .icon-holder {
   position: relative;
@@ -699,12 +708,6 @@ a {
 }
 .feedback:hover, .feedback:focus {
   border-color: var(--hover-focus);
-}
-.feedback__contract {
-  display: inline-block;
-  margin-left: 4px;
-  color: var(--hover-focus);
-  text-decoration: underline;
 }
 
 .icon-check {
@@ -995,6 +998,9 @@ a {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--cubik);
+}
+.address__item .address__link[href="https://goo.gl/maps/kGHBd9NLQaHWzJa29"] {
+  color: rgb(255, 255, 255);
 }
 .address__item .address__link:hover, .address__item .address__link:focus {
   color: var(--hover-focus);
@@ -1377,14 +1383,13 @@ a {
   line-height: 1.55;
   letter-spacing: 0.03em;
   transform: translateY(100%);
-  opacity: 0;
-  transition-property: transform;
-  transition-duration: 250ms;
+  opacity: 1;
+  transition-property: transform, opacity;
+  transition-duration: 500ms;
   transition-timing-function: var(--cubik);
 }
 .examples__link:hover .overlay__text, .examples__link:focus .overlay__text {
   transform: translateY(0);
-  opacity: 1;
 }
 @media screen and (min-width: 480px), (min-width: 767px) {
   .overlay__text {

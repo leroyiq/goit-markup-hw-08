@@ -38,6 +38,7 @@
   &__btn:hover &__icon,
   &__btn:focus &__icon {
     fill: var(--hover-focus);
+    cursor: pointer;
   }
 
   &__body {

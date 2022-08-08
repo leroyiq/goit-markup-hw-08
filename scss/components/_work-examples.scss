@@ -92,15 +92,14 @@
   letter-spacing: 0.03em;
 
   transform: translateY(100%);
-  opacity: 0;
-  transition-property: transform;
-  transition-duration: 250ms;
+  opacity: 1;
+  transition-property: transform, opacity;
+  transition-duration: 500ms;
   transition-timing-function: var(--cubik);
 
   .examples__link:hover &,
   .examples__link:focus & {
     transform: translateY(0);
-    opacity: 1;
   }
 
   @include mobile {
